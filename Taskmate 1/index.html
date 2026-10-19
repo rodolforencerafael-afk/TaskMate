@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TaskMate - Everyday Task &amp; Reminder System</title>
+<link href="design.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- =====================================================
+     LOGIN PAGE
+====================================================== -->
+<section class="auth-page" id="login">
+<div class="auth-container">
+<div class="auth-brand">
+<img alt="TaskMate Mascot" class="auth-logo" src="images/grok-image-e91e3b88-9491-409b-bfd7-ca15868c3dda.jpg"/>
+<h1>TaskMate</h1>
+<h2>Everyday Task &amp; Reminder System</h2>
+<p>Stay organized, manage your tasks, and never forget what needs to be done.</p>
+<div class="brand-decoration"><span>♡</span><span>✿</span><span>♡</span></div>
+</div>
+<div class="auth-form">
+<div class="form-header"><span class="small-icon">🌷</span><h2>Welcome Back!</h2><p>Sign in to continue to TaskMate.</p></div>
+<form>
+<label for="login-email">Email Address</label>
+<input autocomplete="email" id="login-email" placeholder="Enter your email" type="email"/>
+<label for="login-password">Password</label>
+<input autocomplete="current-password" id="login-password" placeholder="Enter your password" type="password"/>
+<div class="form-options">
+<label class="remember"><input type="checkbox"/> Remember me</label>
+<a href="#">Forgot Password?</a>
+</div>
+<button class="main-button" type="submit">Sign In</button>
+</form>
+<p class="switch-form">Don't have an account? <a href="#register">Sign Up</a></p>
+</div>
+</div>
+</section>
+
+<!-- =====================================================
+     REGISTER PAGE
+====================================================== -->
+<section class="auth-page" id="register">
+<div class="auth-container">
+<div class="auth-brand">
+<img alt="TaskMate Mascot" class="auth-logo" src="images/logo.jpg"/>
+<h1>TaskMate</h1>
+<h2>Create Your Account</h2>
+<p>Start organizing your everyday tasks and make your schedule easier.</p>
+<div class="brand-decoration"><span>♡</span><span>✿</span><span>♡</span></div>
+</div>
+<div class="auth-form register-form">
+<div class="form-header"><span class="small-icon">🌱</span><h2>Create an Account</h2><p>Fill in your basic information.</p></div>
+<form>
+<div class="two-inputs">
+<div><label for="lastname">Last Name</label><input id="lastname" placeholder="Last name" type="text"/></div>
+<div><label for="firstname">First Name</label><input id="firstname" placeholder="First name" type="text"/></div>
+</div>
+<label for="register-email">Email Address</label>
+<input id="register-email" placeholder="Enter your email" type="email"/>
+<label for="birthdate">Birthdate</label>
+<input id="birthdate" type="date"/>
+<label for="register-password">Password</label>
+<input autocomplete="new-password" id="register-password" placeholder="Create a password" type="password"/>
+<label for="confirm-password">Confirm Password</label>
+<input autocomplete="new-password" id="confirm-password" placeholder="Confirm your password" type="password"/>
+<button class="main-button" type="submit">Create Account</button>
+</form>
+<p class="switch-form">Already have an account? <a href="#login">Sign In</a></p>
+</div>
+</div>
+</section>
+
+<!-- =====================================================
+     DASHBOARD
+====================================================== -->
+<section class="system-page" id="dashboard">
+<aside class="sidebar">
+<div class="sidebar-logo"><img alt="TaskMate Logo" src="images/logo.jpg"/><div><h2>TaskMate</h2><span>Stay Organized ♡</span></div></div>
+<nav class="sidebar-navigation">
+<a class="active" href="#dashboard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Dashboard</span></a>
+<a href="#tasks"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg><span>My Tasks</span></a>
+<a href="#calendar"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>My Planner</span></a>
+<a href="#completed"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Completed</span></a>
+<a href="#reminders"><svg class="nav-icon swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminders</span></a>
+<a href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a>
+</nav>
+<div class="sidebar-bottom">
+<div class="mini-profile"><div class="profile-circle"><span id="userInitial"></span></div><div><strong><span id="sidebarUserName"></span></strong><small>Student</small></div></div>
+<a class="logout-button" href="#login">↪ Logout</a>
+</div>
+</aside>
+<main class="main-content">
+<header class="topbar">
+<div><span class="date-small" id="currentDate"></span><h1>Good day, <span id="userName"></span>! 🌷</h1><p>Let's make today productive and organized.</p></div>
+<div class="topbar-actions">
+    <label class="switch"><input type="checkbox" class="dark-mode-checkbox" /><span class="slider"><div class="star star_1"></div><div class="star star_2"></div><div class="star star_3"></div><svg viewBox="0 0 16 16" class="cloud_1 cloud"><path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path></svg></span></label>
+    <button aria-label="Reminders" class="icon-button" type="button" onclick="location.hash='#reminders'"><svg class="swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+    <div class="user-avatar"><span id="topUserInitial"></span></div>
+</div>
+</header>
+<section class="dashboard-cards">
+<div class="dashboard-card pink-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#e978b5" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg></div><div><span>Total Tasks</span><h2 id="totalTasks">—</h2></div></div>
+<div class="dashboard-card green-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4da67c" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div><div><span>Ongoing</span><h2 id="ongoingTasks">—</h2></div></div>
+<div class="dashboard-card yellow-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a9872c" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div><span>Pending</span><h2 id="pendingTasks">—</h2></div></div>
+<div class="dashboard-card blue-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#5a9cc1" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div><div><span>Completed</span><h2 id="completedTasks">—</h2></div></div>
+</section>
+<section class="dashboard-grid">
+<div class="content-box progress-box">
+<div class="box-header"><div><span class="section-label">Your Progress</span><h2>Task Progress</h2></div><span class="cute-icon">🌱</span></div>
+<div class="progress-container"><div class="progress-circle"><span id="taskProgress">—</span></div><p id="progressMessage">Your task progress will appear here.</p></div>
+<div class="progress-info"><h3>Task Progress</h3><p id="progressInfoText">Your progress will be shown here once you start adding tasks.</p><div class="progress-bar"><span></span></div></div>
+</div>
+<div class="content-box">
+<div class="box-header"><div><span class="section-label">Today</span><h2>Current Activities</h2></div><a class="view-link" href="#tasks">View All</a></div>
+<div class="activity-list"><p class="empty-message" id="activitiesEmpty">No activities yet.</p></div>
+</div>
+</section>
+<section class="content-box left-off-box">
+<div class="box-header"><div><span class="section-label">Continue Working</span><h2>Tasks You Left Off</h2></div><span class="cute-icon">🌸</span></div>
+<div class="left-off-task"><p class="empty-message" id="leftOffEmpty">No unfinished tasks yet.</p></div>
+</section>
+</main>
+</section>
+
+<!-- =====================================================
+     TASK MANAGEMENT
+====================================================== -->
+<section class="system-page" id="tasks">
+<aside class="sidebar">
+<div class="sidebar-logo"><img alt="TaskMate Logo" src="images/logo.jpg"/><div><h2>TaskMate</h2><span>Stay Organized ♡</span></div></div>
+<nav class="sidebar-navigation">
+<a href="#dashboard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Dashboard</span></a>
+<a class="active" href="#tasks"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg><span>My Tasks</span></a>
+<a href="#calendar"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>My Planner</span></a>
+<a href="#completed"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Completed</span></a>
+<a href="#reminders"><svg class="nav-icon swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminders</span></a>
+<a href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a>
+</nav>
+<div class="sidebar-bottom"><div class="mini-profile"><div class="profile-circle"><span id="userInitialTasks"></span></div><div><strong><span id="sidebarUserNameTasks"></span></strong><small>Student</small></div></div><a class="logout-button" href="#login">↪ Logout</a></div>
+</aside>
+<main class="main-content">
+<header class="page-title">
+<div><span class="section-label">Stay on track</span><h1>My Tasks 📋</h1><p>Manage your everyday tasks and deadlines.</p></div>
+<div style="display: flex; gap: 15px; align-items: center;">
+    <label class="switch"><input type="checkbox" class="dark-mode-checkbox" /><span class="slider"><div class="star star_1"></div><div class="star star_2"></div><div class="star star_3"></div><svg viewBox="0 0 16 16" class="cloud_1 cloud"><path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path></svg></span></label>
+    <button class="add-task-button" type="button">+ Add New Task</button>
+</div>
+</header>
+<div class="task-controls">
+<div class="search-box">🔍<input id="searchTask" placeholder="Search your tasks..." type="text"/></div>
+<select id="filterCategory"><option value="">All Categories</option><option value="school">School</option><option value="work">Work</option><option value="personal">Personal</option><option value="others">Others</option></select>
+<select id="filterPriority"><option value="">All Priorities</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select>
+<select id="filterStatus"><option value="">All Status</option><option value="pending">Pending</option><option value="ongoing">Ongoing</option><option value="processing">Processing</option><option value="completed">Completed</option></select>
+</div>
+<div class="content-box task-table-box">
+<div class="task-table-header"><h2>Task List</h2><span id="taskCount">—</span></div>
+<div class="task-list"><p class="empty-message" id="taskListEmpty">No tasks yet.</p></div>
+</div>
+</main>
+</section>
+
+<!-- =====================================================
+     MY PLANNER / CALENDAR
+====================================================== -->
+<section class="system-page" id="calendar">
+<aside class="sidebar">
+<div class="sidebar-logo"><img alt="TaskMate Logo" src="images/logo.jpg"/><div><h2>TaskMate</h2><span>Stay Organized ♡</span></div></div>
+<nav class="sidebar-navigation">
+<a href="#dashboard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Dashboard</span></a>
+<a href="#tasks"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg><span>My Tasks</span></a>
+<a class="active" href="#calendar"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>My Planner</span></a>
+<a href="#completed"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Completed</span></a>
+<a href="#reminders"><svg class="nav-icon swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminders</span></a>
+<a href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a>
+</nav>
+<div class="sidebar-bottom"><div class="mini-profile"><div class="profile-circle"><span id="userInitialCalendar"></span></div><div><strong><span id="sidebarUserNameCalendar"></span></strong><small>Student</small></div></div><a class="logout-button" href="#login">↪ Logout</a></div>
+</aside>
+<main class="main-content planner-page">
+<div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+    <label class="switch"><input type="checkbox" class="dark-mode-checkbox" /><span class="slider"><div class="star star_1"></div><div class="star star_2"></div><div class="star star_3"></div><svg viewBox="0 0 16 16" class="cloud_1 cloud"><path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path></svg></span></label>
+</div>
+<div class="planner-title"><span>♡ Plan • Organize • Achieve ♡</span><h1>My Planner</h1><p>Organize your tasks and schedule your week.</p></div>
+<div class="calendar-container">
+<div class="calendar-header"><button aria-label="Previous month" type="button">‹</button><h2 id="calendarMonth"></h2><button aria-label="Next month" type="button">›</button></div>
+<div class="calendar-weekdays"><div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div></div>
+<div class="calendar-grid"></div>
+</div>
+<p class="calendar-hint">💡 Click a date to see its tasks. Use the <b>+</b> on a date to add a task to that day.</p>
+<div class="content-box day-panel" id="dayPanel">
+<div class="box-header"><div><span class="section-label">Selected day</span><h2 id="dayPanelTitle">—</h2></div><button class="add-task-button add-day-task" id="addDayTask" type="button">+ Add Task</button></div>
+<div class="task-list" id="dayTaskList"></div>
+<p class="unscheduled-note" hidden="" id="unscheduledNote"></p>
+</div>
+<div class="weekly-section">
+<div class="week-title"><span>Weekly Schedule</span><h2>Your Tasks This Week 🌷</h2></div>
+<div class="weekly-grid"></div>
+</div>
+</main>
+</section>
+
+<!-- =====================================================
+     COMPLETED TASKS
+====================================================== -->
+<section class="system-page" id="completed">
+<aside class="sidebar">
+<div class="sidebar-logo"><img alt="TaskMate Logo" src="images/logo.jpg"/><div><h2>TaskMate</h2><span>Stay Organized ♡</span></div></div>
+<nav class="sidebar-navigation">
+<a href="#dashboard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Dashboard</span></a>
+<a href="#tasks"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg><span>My Tasks</span></a>
+<a href="#calendar"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>My Planner</span></a>
+<a class="active" href="#completed"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Completed</span></a>
+<a href="#reminders"><svg class="nav-icon swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminders</span></a>
+<a href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a>
+</nav>
+<div class="sidebar-bottom"><div class="mini-profile"><div class="profile-circle"><span id="userInitialCompleted"></span></div><div><strong><span id="sidebarUserNameCompleted"></span></strong><small>Student</small></div></div><a class="logout-button" href="#login">↪ Logout</a></div>
+</aside>
+<main class="main-content">
+<div class="page-title">
+<div><span class="section-label">Your achievements</span><h1>Completed Tasks 🌷</h1><p>Keep a record of the tasks you have finished.</p></div>
+<label class="switch"><input type="checkbox" class="dark-mode-checkbox" /><span class="slider"><div class="star star_1"></div><div class="star star_2"></div><div class="star star_3"></div><svg viewBox="0 0 16 16" class="cloud_1 cloud"><path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path></svg></span></label>
+</div>
+<div class="content-box completed-box">
+<div class="completed-header"><div><h2>Finished Tasks</h2><p id="completedCount">— completed tasks</p></div><span class="completed-badge" id="completedBadge">No completed tasks yet.</span></div>
+<div id="completedList"><p class="empty-message">No completed tasks yet.</p></div>
+</div>
+</main>
+</section>
+
+<!-- =====================================================
+     REMINDERS
+====================================================== -->
+<section class="system-page" id="reminders">
+<aside class="sidebar">
+<div class="sidebar-logo"><img alt="TaskMate Logo" src="images/logo.jpg"/><div><h2>TaskMate</h2><span>Stay Organized ♡</span></div></div>
+<nav class="sidebar-navigation">
+<a href="#dashboard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Dashboard</span></a>
+<a href="#tasks"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg><span>My Tasks</span></a>
+<a href="#calendar"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>My Planner</span></a>
+<a href="#completed"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Completed</span></a>
+<a class="active" href="#reminders"><svg class="nav-icon swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminders</span></a>
+<a href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a>
+</nav>
+<div class="sidebar-bottom"><div class="mini-profile"><div class="profile-circle"><span id="userInitialReminders"></span></div><div><strong><span id="sidebarUserNameReminders"></span></strong><small>Student</small></div></div><a class="logout-button" href="#login">↪ Logout</a></div>
+</aside>
+<main class="main-content">
+<div class="page-title">
+<div><span class="section-label">Never miss a deadline</span><h1 style="display: flex; align-items: center; gap: 12px;">My Reminders <svg class="swinging-bell" viewBox="0 0 24 24" fill="none" stroke="var(--pink-dark)" stroke-width="2" style="width: 34px; height: 34px; transform-origin: top center;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></h1><p>Schedule reminders for your upcoming tasks.</p></div>
+<label class="switch"><input type="checkbox" class="dark-mode-checkbox" /><span class="slider"><div class="star star_1"></div><div class="star star_2"></div><div class="star star_3"></div><svg viewBox="0 0 16 16" class="cloud_1 cloud"><path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path></svg></span></label>
+</div>
+<div class="alarm-card">
+<div class="alarm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--pink-dark)" stroke-width="2" style="width: 34px; height: 34px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+<div><span id="upcomingReminderLabel">Upcoming Reminder</span><h2 id="upcomingReminderTitle">No upcoming reminders yet.</h2><p id="upcomingReminderMessage">Your scheduled reminders will appear here.</p><strong id="upcomingReminderTime">—</strong></div>
+<button class="dismiss-button" id="dismissReminder" type="button">Dismiss</button>
+</div>
+<div class="content-box">
+<div class="box-header"><div><span class="section-label">Scheduled</span><h2>Upcoming Reminders</h2></div><div class="cute-icon"><svg class="swinging-bell" viewBox="0 0 24 24" fill="none" stroke="var(--pink-dark)" stroke-width="2" style="width: 24px; height: 24px; transform-origin: top center;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div></div>
+<div class="reminder-list"><p class="empty-message" id="reminderListEmpty">No reminders yet.</p></div>
+</div>
+</main>
+</section>
+
+<!-- =====================================================
+     PROFILE / PERSONAL INFORMATION
+====================================================== -->
+<section class="system-page" id="profile">
+<aside class="sidebar">
+<div class="sidebar-logo"><img alt="TaskMate Logo" src="images/logo.jpg"/><div><h2>TaskMate</h2><span>Stay Organized ♡</span></div></div>
+<nav class="sidebar-navigation">
+<a href="#dashboard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Dashboard</span></a>
+<a href="#tasks"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg><span>My Tasks</span></a>
+<a href="#calendar"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>My Planner</span></a>
+<a href="#completed"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Completed</span></a>
+<a href="#reminders"><svg class="nav-icon swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminders</span></a>
+<a href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a>
+</nav>
+<div class="sidebar-bottom"><div class="mini-profile"><div class="profile-circle"><span id="userInitialProfile"></span></div><div><strong><span id="sidebarUserNameProfile"></span></strong><small>Student</small></div></div><a class="logout-button" href="#login">↪ Logout</a></div>
+</aside>
+<main class="main-content">
+<div class="page-title">
+<div><span class="section-label">Your account</span><h1>My Profile 👤</h1><p>Your personal information and account details.</p></div>
+<div style="display: flex; gap: 12px; align-items: center;">
+<label class="switch"><input type="checkbox" class="dark-mode-checkbox" /><span class="slider"><div class="star star_1"></div><div class="star star_2"></div><div class="star star_3"></div><svg viewBox="0 0 16 16" class="cloud_1 cloud"><path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path></svg></span></label>
+<button class="profile-edit-button" type="button" data-edit-profile>✏️ Edit Profile</button>
+</div>
+</div>
+
+<div class="settings-box profile-box">
+<div class="profile-settings">
+<div class="large-profile"><span id="profilePageInitial"></span></div>
+<div>
+<h3 id="profilePageName">—</h3>
+<p id="profilePageEmail">—</p>
+<span class="profile-badge">TaskMate Member ♡</span>
+</div>
+</div>
+
+<div class="profile-info-grid">
+<div class="profile-info-item"><span>First Name</span><strong id="profileFirstName">—</strong></div>
+<div class="profile-info-item"><span>Last Name</span><strong id="profileLastName">—</strong></div>
+<div class="profile-info-item"><span>Email Address</span><strong id="profileEmailFull">—</strong></div>
+<div class="profile-info-item"><span>Birthdate</span><strong id="profileBirthdate">—</strong></div>
+<div class="profile-info-item"><span>Member Since</span><strong id="profileJoined">—</strong></div>
+<div class="profile-info-item"><span>Tasks Created</span><strong id="profileTaskCount">—</strong></div>
+</div>
+
+<div class="profile-actions">
+<button class="profile-edit-button" type="button" data-edit-profile>✏️ Edit Profile</button>
+<button class="outline-button" type="button" data-edit-profile>🔒 Change Password</button>
+</div>
+</div>
+</main>
+</section>
+
+<!-- =====================================================
+     SETTINGS
+====================================================== -->
+<section class="system-page" id="settings">
+<aside class="sidebar">
+<div class="sidebar-logo"><img alt="TaskMate Logo" src="images/logo.jpg"/><div><h2>TaskMate</h2><span>Stay Organized ♡</span></div></div>
+<nav class="sidebar-navigation">
+<a href="#dashboard"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Dashboard</span></a>
+<a href="#tasks"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M9 14h6"></path><path d="M9 18h6"></path><path d="M9 10h.01"></path></svg><span>My Tasks</span></a>
+<a href="#calendar"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>My Planner</span></a>
+<a href="#completed"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Completed</span></a>
+<a href="#reminders"><svg class="nav-icon swinging-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminders</span></a>
+<a class="active" href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span></a>
+</nav>
+<div class="sidebar-bottom"><div class="mini-profile"><div class="profile-circle"><span id="userInitialSettings"></span></div><div><strong><span id="sidebarUserNameSettings"></span></strong><small>Student</small></div></div><a class="logout-button" href="#login">↪ Logout</a></div>
+</aside>
+<main class="main-content">
+<div class="page-title">
+<div><span class="section-label">Personalize your experience</span><h1>Settings ⚙️</h1><p>Customize your TaskMate experience.</p></div>
+<label class="switch"><input type="checkbox" class="dark-mode-checkbox" /><span class="slider"><div class="star star_1"></div><div class="star star_2"></div><div class="star star_3"></div><svg viewBox="0 0 16 16" class="cloud_1 cloud"><path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path></svg></span></label>
+</div>
+
+<!-- PROFILE -->
+<div class="settings-box">
+<div class="settings-heading"><div class="settings-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--pink-dark)" stroke-width="2" style="width: 22px; height: 22px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div><h2>Profile</h2><p>Manage your basic account information.</p></div></div>
+<div class="profile-settings">
+<div class="large-profile"><span id="profileInitial"></span></div>
+<div><h3><span id="profileName"></span></h3><p><span id="profileEmail"></span></p><button class="outline-button" type="button">Edit Profile</button></div>
+</div>
+</div>
+
+<!-- NOTIFICATIONS -->
+<div class="settings-box">
+<div class="settings-heading"><div class="settings-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--pink-dark)" stroke-width="2" style="width: 22px; height: 22px;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div><div><h2>Notifications</h2><p>Manage your task reminders.</p></div></div>
+
+<div class="setting-option">
+    <div><h3>Push Notifications</h3><p>Get alerts on your phone/desktop even when the app is closed.</p></div>
+    <label class="toggle"><input type="checkbox" id="pushNotificationsToggle"/><span></span></label>
+</div>
+<div class="setting-option">
+    <div><h3>In-App Reminders</h3><p>Show alarm pop-ups while the app is open.</p></div>
+    <label class="toggle"><input type="checkbox"/><span></span></label>
+</div>
+</div>
+
+<!-- ALARM & RINGTONE -->
+<div class="settings-box">
+<div class="settings-heading"><div class="settings-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--pink-dark)" stroke-width="2" style="width: 22px; height: 22px;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg></div><div><h2>Alarm &amp; Ringtone</h2><p>Choose the sound that rings when a reminder goes off.</p></div></div>
+<div class="ringtone-grid">
+<div class="ringtone-field"><label for="ringtoneSelect">Ringtone</label><select id="ringtoneSelect"></select></div>
+<div class="ringtone-field"><label for="snoozeMinutes">Snooze length</label><select id="snoozeMinutes"><option value="5">5 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option><option value="30">30 minutes</option></select></div>
+</div>
+<div class="ringtone-field"><label for="ringtoneVolume">Volume: <span id="volumeValue">70%</span></label><input id="ringtoneVolume" max="100" min="0" type="range" value="70"/></div>
+<div class="ringtone-buttons"><button class="outline-button" id="previewRingtone" type="button">▶ Preview</button><button class="outline-button" id="testAlarm" type="button">⏰ Test Alarm</button></div>
+<div class="custom-ringtone"><div><h3>Custom Ringtone</h3><p id="customRingtoneInfo">Upload your own sound (MP3, WAV or OGG, up to 2 MB).</p></div><div class="ringtone-buttons"><label class="outline-button upload-label" for="ringtoneFile">⬆ Upload</label><input accept="audio/*" hidden="" id="ringtoneFile" type="file"/><button class="outline-button" hidden="" id="removeRingtone" type="button">Remove</button></div></div>
+</div>
+</main>
+</section>
+
+<footer><p>♡ TaskMate — Everyday Task &amp; Reminder System</p><span>Stay organized. Stay productive. 🌷</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# netlify.toml — TaskMate configuration for Netlify
+
+[build]
+  publish = "."
+
+# Serve sw.js with the correct MIME type and no caching,
+# so the browser always registers the latest Service Worker version.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Don't cache your CSS/JS during development
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
